@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/form.css" />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=satoshi@500,300,400&display=swap"
+      rel="stylesheet"
+    />
+    <title>Formulario de registro</title>
+  </head>
+  <body>
+    <div class="contenedor">
+      <form class="form">
+        <div class="content">
+          <h2>Formulario de registro:</h2>
+          <div>
+            <!-- <label for="nombre">Nombre</label> -->
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              placeholder="Nombre"
+              required
+            />
+          </div>
+          <div>
+            <!-- <label for="apellido">Apellido</label> -->
+            <input
+              type="text"
+              id="apellido"
+              name="apellido"
+              placeholder="Apellido"
+              required
+            />
+          </div>
+          <div>
+            <!-- <label for="email">Email</label> -->
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email"
+              required
+            />
+          </div>
+          
+          <div class="selects">
+            <div>
+              <label for="fecha">Fecha de nacimiento</label>
+            </div>
+            <input type="date" id="fecha" name="fecha" required />
+          </div>
+          <div class="selects">
+            <div>
+              <label for="">Deporte favorito</label>
+            </div>
+            <select id="deporte" name="deporte" required>
+              <option value="" disabled selected>Deportes</option>
+              <option value="">Fútbol</option>
+              <option value="">Básquet</option>
+              <option value="">Tenis</option>
+              <option value="">Hockey</option>
+              <option value="">Otro</option>
+            </select>
+          </div>
+          <div>
+            <!-- <label for="biografia">Biografía:</label> -->
+            <textarea type="text" id="biografia" name="biografia" required>Biografía</textarea>
+          </div>
+        </div >
+
+        <div class="buttons">
+          <button type="reset">Cancelar</button>
+          <button type="submit">Enviar</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
