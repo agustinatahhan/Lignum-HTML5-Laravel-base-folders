@@ -7,22 +7,45 @@
     <title>Práctica</title>
   </head>
   <body>
-    <div>
+    <div class="rows">
       <div>
         <section id="hidden-section" class="hidden">
           <p>Hello World</p>
         </section>
       </div>
-      <div>
-        <button id="btn">Obtener Chiste</button>
+      <div class="joke">
+        <button class="btn" id="btn">Obtener Chiste</button>
         <h2></h2>
       </div>
-      <div>
-        <input type="text" id="searchInput" placeholder="Buscar repositorios" />
-        <ul id="repoList"></ul>
-      </div>
-      <div>
-        
+      <div class="repos">
+        <div class="inputSearch">
+          <input
+            id="searchInput"
+            type="text"
+            placeholder="Buscar repositorios"
+          />
+          <div class="lupa">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="icon icon-tabler icon-tabler-search"
+              width="15"
+              height="15"
+              viewBox="0 0 24 24"
+              strokeWidth="1.5"
+              stroke="#000000"
+              fill="none"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+              <path d="M21 21l-6 -6" />
+            </svg>
+          </div>
+        </div>
+        <div>
+          <ul class="repoUl" id="repoList"></ul>
+        </div>
       </div>
     </div>
     <script src="/01-JS-DOM-APIs/script.js"></script>

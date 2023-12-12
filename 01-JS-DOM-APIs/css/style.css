@@ -1,12 +1,119 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-body{
-    text-align: center;
+body {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+p{
+    font-size: 20px;
+}
 .hidden {
-    display: none;
+  display: none;
+}
+
+.rows {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  margin: 5rem 0;
+}
+
+.joke{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 4rem;
+    gap: 2rem;
+}
+
+.btn{
+    border: none;
+    background: none;
+    background-color: black;
+    width: 10rem;
+    height: 2rem;
+    border-radius: 10px;
+    color: white;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.btn:hover{
+    background-color: #ebebeb;
+    color: black;
+    transform: scale(1.1);
+}
+
+.repos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  border-radius: 10px;
+  padding: 5rem;
+}
+
+.repoUl {
+  list-style: none;
+  padding: 1px;
+}
+
+.inputSearch {
+  position: relative;
+}
+
+.inputSearch input {
+  width: 15rem;
+  height: 2rem;
+  border: none;
+  text-align: center;
+  border-radius: 10px;
+  margin: 0 1rem;
+  outline: none;
+  border: 1px solid #d2d1d1;
+}
+
+.inputSearch input::placeholder {
+  letter-spacing: 2px;
+}
+
+.inputSearch .lupa {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 3%;
+  width: 50px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 767px) {
+  .repos {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .inputSearch input {
+    width: 10rem;
+    height: 2rem;
+    border: none;
+    text-align: center;
+    border-radius: 10px;
+    /* margin: 0 1rem; */
+    outline: none;
+    border: 1px solid #d2d1d1;
+  }
 }
