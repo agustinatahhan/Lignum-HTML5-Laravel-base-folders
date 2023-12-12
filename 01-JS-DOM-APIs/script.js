@@ -3,8 +3,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   const hiddenSection = document.getElementById("hidden-section");
 
-  hiddenSection.classList.add("fade-in");
-
   setTimeout(function () {
     hiddenSection.style.display = "block";
   }, 1000);

@@ -2,15 +2,15 @@
 // Ejercicio 6
 
 function generarTabla(datos) {
-    var tabla = document.createElement("table");
+    const tabla = document.createElement("table");
 
-    var encabezado = document.createElement("tr");
+    const encabezado = document.createElement("tr");
 
-    var encabezados = Object.keys(datos[0]);
+    const encabezados = Object.keys(datos[0]);
 
     encabezados.forEach(encabezadoTexto => {
-        var celdaEncabezado = document.createElement("th");
-        var textoEncabezado = document.createTextNode(encabezadoTexto);
+        const celdaEncabezado = document.createElement("th");
+        const textoEncabezado = document.createTextNode(encabezadoTexto);
         celdaEncabezado.appendChild(textoEncabezado);
         encabezado.appendChild(celdaEncabezado);
     });
@@ -18,11 +18,11 @@ function generarTabla(datos) {
     tabla.appendChild(encabezado);
 
     datos.forEach(filaDatos => {
-        var fila = document.createElement("tr");
+        const fila = document.createElement("tr");
 
         encabezados.forEach(encabezado => {
-            var celda = document.createElement("td");
-            var textoCelda = document.createTextNode(filaDatos[encabezado]);
+            const celda = document.createElement("td");
+            const textoCelda = document.createTextNode(filaDatos[encabezado]);
             celda.appendChild(textoCelda);
             fila.appendChild(celda);
         });
@@ -33,7 +33,7 @@ function generarTabla(datos) {
     document.body.appendChild(tabla);
 }
 
-var datosEjemplo = [
+const datosEjemplo = [
     { Nombre: "Agus", Edad: 28, Ciudad: "Santiago del Estero" },
     { Nombre: "Olivia", Edad: 5, Ciudad: "Córdoba" },
     { Nombre: "Valentina", Edad: 24, Ciudad: "Mendoza" }
